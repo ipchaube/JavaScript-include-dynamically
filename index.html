@@ -11,12 +11,18 @@
 <h1>Loding Lavascript for the next move.</h1>
 <div id="iamdone">Wait for a while....</div>
 <script>
-		document.getElementById("iamdone").innerHTML ='I am done loading, Good to go :)';
-		setTimeout(
+
+	/*
+		Verifying if everything loaded and updating script load status.
+		Their are lots of way we can improve this work
+	*/
+	setTimeout(
 		function(){
-				JS1.func1();
+			document.getElementById("iamdone").innerHTML ='I am done loading, Good to go :)';
+			//Calling function from the js/js1.js after load
+			JS1.func1();
 		}
-		,800);
+	,800);
 
 </script>
 </body>
