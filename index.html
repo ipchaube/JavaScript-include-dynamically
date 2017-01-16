@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="js/main.js"></script>
+
+<script>
+		loadScript('js/js1.js', 'js/js2.js');
+</script>
+</head>
+
+<body>
+<h1>Loding Lavascript for the next move.</h1>
+<div id="iamdone">Wait for a while....</div>
+<script>
+		document.getElementById("iamdone").innerHTML ='I am done loading, Good to go :)';
+		setTimeout(
+		function(){
+				JS1.func1();
+		}
+		,800);
+
+</script>
+</body>
+<html>
